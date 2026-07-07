@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root" data-lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASAFA ACADEMY | حلقة تحفيظ القرآن الكريم</title>
+<meta name="description" content="ASAFA ACADEMY — حلقة تحفيظ القرآن الكريم للنساء من 15 سنة. من 3:00 إلى 5:00 صباحاً. تجويد، علوم شرعية، تفسير. 🎁 الحصة الأولى مجانية.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ASAFA ACADEMY | حلقة تحفيظ القرآن الكريم">
+<meta property="og:description" content="حلقة تحفيظ القرآن للنساء والفتيات من 15 سنة • 3:00–5:00 صباحاً • الحصة الأولى مجانية 🎁">
+<meta property="og:image" content="https://assafaacademy.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://assafaacademy.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ASAFA ACADEMY">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASAFA ACADEMY | حلقة تحفيظ القرآن الكريم">
+<meta name="twitter:description" content="حلقة تحفيظ القرآن للنساء والفتيات من 15 سنة • الحصة الأولى مجانية 🎁">
+<meta name="twitter:image" content="https://assafaacademy.netlify.app/og-image.jpg">
+<meta name="google-site-verification" content="nz7EFJE2joKh8uvlMPBnuCXNJvYEJsiHiNERvM_1jKY"/>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#db2777"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="ASAFA"/>
+  <link rel="apple-touch-icon" href="icon-192.png"/>
+  <script>
+    if('serviceWorker' in navigator){
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+<meta name="theme-color" content="#0f0810">
+<style>
+:root {
+  --bg:#0f0810; --bg2:#180d1a; --bg3:#221428;
+  --pink:#f472b6; --pink-deep:#db2777; --pink-pale:#fce7f3; --pink-dim:rgba(244,114,182,0.12);
+  --gold:#f59e0b; --gold-l:#fcd34d; --gold-dim:rgba(245,158,11,0.12);
+  --white:#ffffff; --w60:rgba(255,255,255,0.6); --w30:rgba(255,255,255,0.25); --w10:rgba(255,255,255,0.07);
+  --r:20px; --r2:14px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background-color:var(--bg);background-image:radial-gradient(circle at 50% 0%,rgba(244,114,182,0.12) 0%,transparent 50%),radial-gradient(circle at 0% 100%,rgba(219,39,119,0.08) 0%,transparent 40%),linear-gradient(rgba(20,9,28,0.4) 1px,transparent 1px),linear-gradient(90deg,rgba(20,9,28,0.4) 1px,transparent 1px);background-size:100% 100%,100% 100%,32px 32px,32px 32px;color:var(--white);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:15px;line-height:1.7;direction:rtl;}
+
+/* LANG */
+.lang-bar{background:rgba(15,8,16,0.7);backdrop-filter:blur(12px);border-bottom:1px solid var(--w10);display:flex;justify-content:flex-end;padding:10px 24px;gap:8px;position:sticky;top:0;z-index:110;}
+.lang-btn{background:var(--w10);border:1px solid var(--w30);color:var(--w60);padding:6px 16px;border-radius:30px;font-size:13px;cursor:pointer;transition:all .2s;font-family:inherit;}
+.lang-btn.active{background:linear-gradient(135deg,var(--gold),var(--pink-deep));border-color:transparent;color:white;font-weight:bold;}
+
+/* NAV */
+nav{position:sticky;top:45px;z-index:100;background:rgba(20,9,28,0.8);backdrop-filter:blur(24px);border-bottom:1px solid rgba(245,158,11,0.15);}
+.nav-inner{max-width:1200px;margin:auto;padding:0 24px;height:70px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-size:22px;font-weight:900;background:linear-gradient(135deg,var(--gold-l),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:1px;}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center;}
+.nav-links a{color:var(--w60);text-decoration:none;font-size:14px;transition:color .2s;font-weight:500;}
+.nav-links a:hover{color:var(--gold-l);}
+.nav-cta{background:linear-gradient(135deg,var(--gold),var(--pink-deep))!important;color:white!important;padding:10px 22px;border-radius:50px;font-weight:bold!important;box-shadow:0 4px 15px rgba(245,158,11,0.2);}
+
+/* HERO */
+.hero{min-height:95vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 60px;position:relative;overflow:hidden;}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.35;pointer-events:none;animation:float 8s ease-in-out infinite alternate;}
+.blob-1{width:500px;height:500px;background:var(--pink-deep);top:-100px;right:-100px;}
+.blob-2{width:400px;height:400px;background:var(--gold);bottom:-80px;left:-80px;animation-delay:2s;}
+.blob-3{width:300px;height:300px;background:#9333ea;top:40%;left:50%;transform:translateX(-50%);animation-delay:4s;}
+@keyframes float{from{transform:translateY(0) scale(1);}to{transform:translateY(-30px) scale(1.05);}}
+.blob-3{transform:translateX(-50%);}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold-dim);border:1px solid rgba(245,158,11,0.3);color:var(--gold-l);padding:8px 20px;border-radius:30px;font-size:13px;font-weight:600;margin-bottom:24px;position:relative;}
+.hero h1{font-size:clamp(36px,6vw,64px);font-weight:900;line-height:1.25;margin-bottom:20px;position:relative;}
+.hero h1 .grad{background:linear-gradient(135deg,var(--gold-l),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero-sub{font-size:17px;color:var(--w60);margin-bottom:32px;position:relative;max-width:560px;margin-left:auto;margin-right:auto;}
+.hero-verse{font-size:15px;color:var(--gold-l);background:var(--gold-dim);border:1px solid rgba(245,158,11,0.25);border-radius:var(--r2);padding:14px 28px;margin-bottom:40px;position:relative;display:inline-block;}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;}
+.hero-socials{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:24px;position:relative;}
+.btn-pink{background:linear-gradient(135deg,var(--pink-deep),#9333ea);color:white;padding:14px 36px;border-radius:50px;font-size:15px;font-weight:700;text-decoration:none;border:none;cursor:pointer;box-shadow:0 8px 32px rgba(219,39,119,0.35);transition:transform .2s,box-shadow .2s;font-family:inherit;display:inline-block;}
+.btn-pink:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(219,39,119,0.45);}
+.btn-outline-pink{background:transparent;color:var(--pink);padding:14px 36px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;border:1.5px solid rgba(244,114,182,0.4);transition:all .2s;display:inline-block;}
+.btn-outline-pink:hover{border-color:var(--pink);background:var(--pink-dim);}
+
+/* TICKER */
+.ticker{background:linear-gradient(135deg,var(--pink),var(--gold-l));color:var(--bg);padding:10px 0;overflow:hidden;white-space:nowrap;}
+.ticker-inner{display:inline-flex;gap:60px;animation:ticker 20s linear infinite;font-size:11px;font-weight:bold;letter-spacing:3px;text-transform:uppercase;}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* STATS */
+.stats{background:var(--bg2);border-top:1px solid var(--w10);border-bottom:1px solid var(--w10);padding:32px 24px;}
+.stats-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);}
+@media(max-width:600px){.stats-inner{grid-template-columns:repeat(2,1fr);}}
+.stat{text-align:center;padding:20px;border-left:1px solid var(--w10);}
+.stat:first-child{border-left:none;}
+.stat-num{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:4px;}
+.stat-label{font-size:12px;color:var(--w60);}
+
+/* SECTIONS */
+section{padding:90px 24px;}
+.container{max-width:1200px;margin:auto;}
+.sec-eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--pink-dim);border:1px solid rgba(244,114,182,0.25);color:var(--pink);padding:4px 14px;border-radius:30px;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;}
+.sec-title{font-size:clamp(26px,4vw,46px);font-weight:800;margin-bottom:10px;letter-spacing:-0.5px;}
+.sec-title .grad{background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.sec-sub{color:var(--w60);font-size:15px;margin-bottom:52px;max-width:520px;}
+
+/* BENTO */
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:580px){.bento{grid-template-columns:1fr;}}
+.bento-card{background:var(--bg2);border-radius:var(--r);padding:28px;border:1px solid var(--w10);transition:transform .25s,border-color .25s;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.bento-card:hover{transform:translateY(-4px);border-color:rgba(244,114,182,0.3);}
+.bento-hero-card{background:linear-gradient(135deg,#3b0764,#831843,#451a03);border-radius:var(--r);padding:40px;grid-column:span 2;border:1px solid rgba(244,114,182,0.2);position:relative;overflow:hidden;}
+.bento-hero-card .bg-text{position:absolute;bottom:-20px;left:-10px;font-size:120px;font-weight:900;opacity:0.05;line-height:1;pointer-events:none;}
+.card-tag{display:inline-block;background:var(--pink-dim);border:1px solid rgba(244,114,182,0.25);color:var(--pink);padding:2px 10px;border-radius:20px;font-size:10px;font-weight:600;letter-spacing:1px;margin-bottom:12px;}
+.card-tag.gold{background:var(--gold-dim);border-color:rgba(245,158,11,0.25);color:var(--gold);}
+
+/* SCHEDULE */
+.sched-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:700px){.sched-grid{grid-template-columns:1fr;}}
+.sched-box{background:var(--bg2);border-radius:var(--r);border:1px solid var(--w10);overflow:hidden;}
+.sched-head{background:linear-gradient(135deg,rgba(244,114,182,0.15),rgba(245,158,11,0.1));padding:16px 22px;font-size:13px;font-weight:700;border-bottom:1px solid var(--w10);display:flex;align-items:center;gap:8px;}
+.sched-table{width:100%;border-collapse:collapse;}
+.sched-table tr{border-bottom:1px solid var(--w10);transition:background .2s;}
+.sched-table tr:last-child{border-bottom:none;}
+.sched-table tr:hover{background:var(--w10);}
+.sched-table td{padding:12px 22px;font-size:13px;color:var(--w60);}
+.sched-table td:first-child{color:var(--pink);font-weight:700;white-space:nowrap;}
+.pill{display:inline-block;background:linear-gradient(135deg,rgba(244,114,182,0.15),rgba(245,158,11,0.1));border:1px solid rgba(244,114,182,0.2);color:var(--gold-l);padding:2px 10px;border-radius:20px;font-size:10px;font-weight:600;}
+
+/* YEARS */
+.years-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:800px){.years-grid{grid-template-columns:1fr;}}
+.year-card{background:var(--bg2);border-radius:var(--r);padding:32px 26px;border:1px solid var(--w10);position:relative;overflow:hidden;transition:transform .25s,border-color .25s;}
+.year-card:hover{transform:translateY(-4px);border-color:rgba(244,114,182,0.3);}
+.year-card:nth-child(1)::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pink),var(--gold-l));}
+.year-card:nth-child(2)::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#9333ea,var(--pink));}
+.year-card:nth-child(3)::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--pink));}
+.year-num{font-size:56px;font-weight:900;background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0.2;line-height:1;margin-bottom:8px;}
+.year-label{font-size:10px;letter-spacing:3px;color:var(--pink);text-transform:uppercase;margin-bottom:8px;}
+.year-title{font-size:20px;font-weight:700;margin-bottom:18px;}
+.year-card ul{list-style:none;}
+.year-card ul li{color:var(--w60);font-size:13px;padding:8px 0;border-bottom:1px solid var(--w10);display:flex;gap:8px;align-items:flex-start;}
+.year-card ul li::before{content:'✦';color:var(--pink);font-size:9px;flex-shrink:0;margin-top:5px;}
+
+/* LEVELS */
+.levels-bento{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media(max-width:800px){.levels-bento{grid-template-columns:1fr;}}
+.level-card{background:var(--bg2);border-radius:var(--r);padding:36px 28px;text-align:center;border:1px solid var(--w10);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;}
+.level-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(244,114,182,0.1);border-color:rgba(244,114,182,0.3);}
+.level-emoji{font-size:40px;margin-bottom:14px;display:block;}
+.level-num{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--pink);margin-bottom:8px;}
+.level-title{font-size:20px;font-weight:700;color:var(--pink-pale);margin-bottom:10px;}
+.level-desc{font-size:13px;color:var(--w60);line-height:1.7;}
+
+/* SUB */
+.sub-bento{display:grid;grid-template-columns:1fr 1.4fr;gap:20px;max-width:860px;margin:auto;}
+@media(max-width:640px){.sub-bento{grid-template-columns:1fr;}}
+.sub-price-card{background:linear-gradient(145deg,#3b0764,#831843);border-radius:var(--r);padding:40px 32px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(244,114,182,0.2);position:relative;overflow:hidden;}
+.sub-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px;}
+.sub-big{font-size:52px;font-weight:900;background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:6px;}
+.sub-period{font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:28px;}
+.sub-price-card a{background:white;color:var(--bg);padding:14px;text-align:center;border-radius:50px;font-size:13px;font-weight:800;text-decoration:none;transition:opacity .2s;display:block;position:relative;}
+.sub-price-card a:hover{opacity:0.9;}
+.sub-features-card{background:var(--bg2);border-radius:var(--r);padding:32px;border:1px solid var(--w10);}
+.sub-features-card ul{list-style:none;}
+.sub-features-card ul li{color:var(--w60);font-size:14px;padding:12px 0;border-bottom:1px solid var(--w10);display:flex;align-items:center;gap:10px;}
+.sub-features-card ul li:last-child{border-bottom:none;}
+.sub-features-card ul li::before{content:'✓';width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--pink-deep),var(--gold));display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;flex-shrink:0;color:white;}
+
+/* CHANNELS */
+.ch-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+@media(max-width:440px){.ch-grid{grid-template-columns:1fr;}}
+.item-ch{background:var(--bg3);border:1px solid var(--w10);color:var(--gold-l);padding:9px 12px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;transition:all .2s;}
+.item-ch:hover{background:var(--pink-dim);border-color:var(--pink);color:var(--white);}
+
+/* BOOKS */
+.books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;}
+.book-card{background:var(--bg2);border-radius:var(--r2);overflow:hidden;transition:transform .25s,border-color .25s;display:flex;flex-direction:column;border:1px solid var(--w10);}
+.book-card:hover{transform:translateY(-4px);border-color:rgba(244,114,182,0.3);}
+.book-info{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.book-title{font-size:13px;font-weight:700;line-height:1.5;min-height:38px;}
+.book-price{font-size:18px;font-weight:900;color:var(--gold-l);}
+.book-buy{background:linear-gradient(135deg,var(--pink-deep),var(--gold));color:white;text-align:center;padding:9px;border-radius:30px;font-size:12px;font-weight:800;text-decoration:none;margin-top:auto;}
+
+/* FORM */
+.form-card{background:var(--bg);border-radius:var(--r);padding:48px 40px;max-width:620px;margin:auto;border:1px solid var(--w10);box-shadow:0 0 80px rgba(244,114,182,0.08);}
+@media(max-width:540px){.form-card{padding:28px 18px;}}
+
+/* FOOTER */
+footer{background:var(--bg);border-top:1px solid var(--w10);padding:48px 24px;text-align:center;}
+.footer-logo{font-size:28px;font-weight:900;background:linear-gradient(135deg,var(--gold-l),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:2px;margin-bottom:6px;}
+.footer-tag{font-size:12px;color:var(--w30);letter-spacing:2px;margin-bottom:20px;}
+.footer-links{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:20px;}
+.footer-links a{color:var(--w30);text-decoration:none;font-size:12px;letter-spacing:1px;transition:color .2s;}
+.footer-links a:hover{color:var(--pink);}
+.footer-verse{font-size:14px;color:rgba(245,158,11,0.4);margin-bottom:12px;}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.1);}
+
+/* LANG SWITCH */
+html[data-lang="ar"] .fr,html[data-lang="ar"] .en{display:none!important;}
+html[data-lang="fr"] .ar,html[data-lang="fr"] .en{display:none!important;}
+html[data-lang="en"] .ar,html[data-lang="en"] .fr{display:none!important;}
+html[data-lang="fr"] body,html[data-lang="en"] body{direction:ltr;}
+
+@media(max-width:768px){
+  .nav-links{display:none;}
+  section{padding:48px 14px;}
+  .bento,
+  .bento[style*="grid-template-columns"],
+  .years-grid,
+  .levels-bento,
+  .books-grid{grid-template-columns:repeat(2,1fr) !important;}
+  .bento-hero-card{grid-column:span 1 !important;}
+  .sub-bento{grid-template-columns:1fr !important;}
+  .sched-grid{grid-template-columns:1fr !important;}
+  .stats-inner{grid-template-columns:repeat(2,1fr);}
+  .ch-grid{grid-template-columns:1fr 1fr;}
+  .hero-btns,.hero-socials{flex-direction:column;align-items:center;}
+  .btn-outline-pink,.btn-pink{width:100%;text-align:center;}
+}
+
+/* ─── FAQ ─── */
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+.faq-item{background:var(--bg2);border:1px solid var(--w10);border-radius:var(--r);overflow:hidden;transition:border-color .2s;}
+.faq-item:hover{border-color:rgba(244,114,182,0.25);}
+.faq-q{width:100%;background:transparent;border:none;color:var(--white);padding:20px 24px;font-size:14px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:right;font-family:inherit;}
+html[data-lang="fr"] .faq-q,html[data-lang="en"] .faq-q{text-align:left;}
+.faq-icon{font-size:20px;color:var(--pink);flex-shrink:0;transition:transform .3s;line-height:1;}
+.faq-q.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;font-size:14px;color:var(--w60);line-height:1.9;padding:0 24px;}
+.faq-a.open{max-height:200px;padding:0 24px 20px;}
+
+/* ─── FLOATING BUTTONS ─── */
+.float-btns{position:fixed;bottom:28px;left:24px;display:flex;flex-direction:column;gap:10px;z-index:999;}
+html[data-lang="fr"] .float-btns,html[data-lang="en"] .float-btns{left:auto;right:24px;}
+.float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,0.35);transition:transform .2s;}
+.float-btn:hover{transform:scale(1.1);}
+.float-tg{background:linear-gradient(135deg,#229ED9,#1e7db8);}
+.float-top{background:linear-gradient(135deg,var(--pink-deep),#9333ea);font-size:18px;color:#fff;}
+
+/* ─── CERTIFICATES ─── */
+.certs-track-wrap{overflow:hidden;position:relative;}
+.certs-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:8px 4px 16px;}
+.certs-track::-webkit-scrollbar{display:none;}
+.cert-card{flex:0 0 260px;background:var(--bg3);border:1px solid var(--w10);border-radius:var(--r2);overflow:hidden;transition:transform .25s,border-color .25s;cursor:pointer;}
+.cert-card:hover{transform:translateY(-4px);border-color:rgba(244,114,182,0.3);}
+.cert-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.cert-info{padding:12px 14px;display:flex;flex-direction:column;gap:4px;}
+.cert-name{font-size:13px;font-weight:700;color:var(--white);}
+.cert-score{font-size:12px;color:var(--gold-l);font-weight:600;}
+.cert-nav-btn{background:var(--bg2);border:1px solid var(--w10);color:var(--white);width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;}
+.cert-nav-btn:hover{border-color:var(--pink);color:var(--pink);}
+
+/* ─── TEACHER ─── */
+.teacher-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.teacher-cat{background:var(--bg2);border:1px solid var(--w10);border-radius:var(--r);padding:28px 24px;transition:border-color .2s;}
+.teacher-cat:hover{border-color:rgba(244,114,182,0.25);}
+.teacher-cat-title{font-size:14px;font-weight:800;color:var(--gold-l);margin-bottom:18px;display:flex;align-items:center;gap:8px;}
+.teacher-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.teacher-list li{font-size:13px;color:var(--w60);line-height:1.7;padding-right:14px;position:relative;}
+html[data-lang="fr"] .teacher-list li,html[data-lang="en"] .teacher-list li{padding-right:0;padding-left:14px;}
+.teacher-list li::before{content:'✦';color:var(--pink);font-size:9px;position:absolute;right:0;top:6px;}
+html[data-lang="fr"] .teacher-list li::before,html[data-lang="en"] .teacher-list li::before{right:auto;left:0;}
+@media(max-width:900px){.teacher-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.teacher-grid{grid-template-columns:1fr;}}
+
+/* ─── STORY ─── */
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;}
+.story-quote{background:var(--bg3);border:1px solid rgba(244,114,182,0.15);border-radius:var(--r);padding:28px 24px;display:flex;flex-direction:column;gap:12px;}
+.story-q-mark{font-size:36px;color:var(--pink);line-height:1;font-family:Georgia,serif;}
+.story-q-text{font-size:17px;font-weight:700;color:var(--white);line-height:1.6;}
+.story-q-src{font-size:12px;color:var(--w30);margin-top:auto;}
+.story-text-card{background:var(--bg3);border:1px solid var(--w10);border-radius:var(--r);padding:36px;display:flex;gap:28px;align-items:flex-start;}
+.story-avatar{font-size:52px;flex-shrink:0;}
+.story-text p{font-size:14px;color:var(--w60);line-height:1.9;margin-bottom:16px;}
+.story-sig{font-size:13px;color:var(--gold-l);font-weight:600;margin-top:8px;}
+@media(max-width:900px){.story-grid{grid-template-columns:1fr;}.story-text-card{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<!-- Lang -->
+<div class="lang-bar">
+  <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">🇸🇦 العربية</button>
+  <button class="lang-btn" id="btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
+  <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">ASAFA ACADEMY</div>
+    <ul class="nav-links">
+      <li><a href="#library">📚 <span class="ar">المكتبة</span><span class="fr">Librairie</span><span class="en">Library</span></a></li>
+      <li><a href="#channels">📡 <span class="ar">القنوات</span><span class="fr">Canaux</span><span class="en">Channels</span></a></li>
+      <li><a href="#why"><span class="ar">لماذا نحن</span><span class="fr">Pourquoi nous</span><span class="en">Why Us</span></a></li>
+      <li><a href="#schedule"><span class="ar">البرنامج</span><span class="fr">Programme</span><span class="en">Schedule</span></a></li>
+      <li><a href="#plan"><span class="ar">الخطة</span><span class="fr">Plan</span><span class="en">Plan</span></a></li>
+      <li><a href="#register" class="nav-cta"><span class="ar">سجّلي الآن</span><span class="fr">S'inscrire</span><span class="en">Join Now</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="hero-badge">🌙 <span class="ar">حلقة تحفيظ القرآن الكريم</span><span class="fr">Cercle de Mémorisation du Coran</span><span class="en">Quran Memorization Circle</span></div>
+  <h1>
+    <span class="ar">رحلتكِ نحو<br><span class="grad">ختم القرآن</span></span>
+    <span class="fr">Votre voyage vers<br><span class="grad">le Coran complet</span></span>
+    <span class="en">Your journey towards<br><span class="grad">completing the Quran</span></span>
+  </h1>
+  <p class="hero-sub">
+    <span class="ar">للنساء فقط • ابتداءً من 15 سنة • 4 ساعات أسبوعياً • يومان في الأسبوع</span>
+    <span class="fr">Femmes uniquement • dès 15 ans • 4h/semaine • 2 jours par semaine</span>
+    <span class="en">Women only • from 15 years • 4h/week • 2 days per week</span>
+  </p>
+  <div class="hero-verse">﴿ وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ﴾</div>
+  <div class="hero-socials">
+    <a href="https://t.me/+VhKg7MeUQW45YzJk" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">✈️ Telegram</a>
+    <a href="https://youtube.com/@simplybysafa" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">📺 YouTube</a>
+    <a href="https://www.facebook.com/share/1Bzddv92cE/" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">📘 Facebook</a>
+    <a href="https://www.instagram.com/saf.arb" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">📷 Instagram</a>
+    <a href="https://www.tiktok.com/@rabaouisafa" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">🎵 TikTok</a>
+    <a href="https://pin.it/3xB6GtHiE" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">📌 Pinterest</a>
+    <a href="https://education877532465.wordpress.com/" target="_blank" class="btn-outline-pink" style="padding:8px 18px;font-size:12px;">🌐 WordPress</a>
+  </div>
+  <div class="hero-btns">
+    <a href="#register" class="btn-pink"><span class="ar">سجّلي في الحلقة ✨</span><span class="fr">Rejoindre le cercle ✨</span><span class="en">Join the circle ✨</span></a>
+    <a href="#schedule" class="btn-outline-pink"><span class="ar">اعرفي البرنامج</span><span class="fr">Voir le programme</span><span class="en">See the schedule</span></a>
+  </div>
+</section>
+
+<!-- Video -->
+<section id="video" style="padding-top:0;">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.4);">
+      <div style="position:relative;padding-bottom:56.25%;height:0;">
+        <iframe src="https://www.youtube.com/embed/HlEerpKIru4" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker"><div class="ticker-inner">
+  <span>✦ ASAFA ACADEMY</span><span>✦ تحفيظ القرآن الكريم</span><span>✦ MÉMORISATION DU CORAN</span><span>✦ TAJWID & LANGUE ARABE</span><span>✦ تجويد ولغة عربية</span><span>✦ SCIENCES ISLAMIQUES</span><span>✦ علوم شرعية وتفسير</span>
+  <span>✦ ASAFA ACADEMY</span><span>✦ تحفيظ القرآن الكريم</span><span>✦ MÉMORISATION DU CORAN</span><span>✦ TAJWID & LANGUE ARABE</span><span>✦ تجويد ولغة عربية</span><span>✦ SCIENCES ISLAMIQUES</span><span>✦ علوم شرعية وتفسير</span>
+</div></div>
+
+<!-- Stats -->
+<div class="stats"><div class="stats-inner">
+  <div class="stat"><div class="stat-num">30</div><div class="stat-label"><span class="ar">جزءاً من القرآن</span><span class="fr">Parties du Coran</span><span class="en">Quran Parts</span></div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label"><span class="ar">سنوات للختم</span><span class="fr">Ans pour compléter</span><span class="en">Years to complete</span></div></div>
+  <div class="stat"><div class="stat-num">4h</div><div class="stat-label"><span class="ar">أسبوعياً لكل مجموعة</span><span class="fr">Par semaine / groupe</span><span class="en">Per week / group</span></div></div>
+  <div class="stat"><div class="stat-num">🎁</div><div class="stat-label"><span class="ar">حصة أولى مجانية</span><span class="fr">1ère séance gratuite</span><span class="en">1st session free</span></div></div>
+</div></div>
+
+<!-- Library -->
+<section id="library">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">المكتبة</span><span class="fr">LIBRAIRIE</span><span class="en">LIBRARY</span></div>
+    <h2 class="sec-title"><span class="ar">مكتبة <span class="grad">الكتب الرقمية</span></span><span class="fr">Bibliothèque <span class="grad">numérique</span></span><span class="en">Digital <span class="grad">Book Library</span></span></h2>
+    <p class="sec-sub"><span class="ar">كتب PDF رقمية — اشتري وحمّلي مباشرة عبر PayPal</span><span class="fr">Livres PDF — achetez et téléchargez via PayPal</span><span class="en">Digital PDF books — buy and download via PayPal</span></p>
+    <div class="books-grid">
+      <div class="book-card"><img src="tajwidbast.jpg" alt="بسط وجود في تعلم الأحرف القرآنية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">بسط وجود في تعلم الأحرف القرآنية</span><span class="fr">Bast Woujoud - Apprentissage des lettres coraniques</span><span class="en">Bast Woujoud - Learning Quranic Letters</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="fiqh.jpg" alt="الفقه البسيط" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">الفقه البسيط</span><span class="fr">Le Fikh Simple / Simple Fikh</span><span class="en">Simple Fiqh</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="aqida.jpg" alt="العقيدة المبسطة بأربع لغات" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">العقيدة المبسطة بأربع لغات</span><span class="fr">La Foi Simple en 4 langues</span><span class="en">The Simple Faith in 4 languages</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="arabic_hands.jpg" alt="العربية بين يديك" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">العربية بين يديك</span><span class="fr">L'Arabe entre vos mains</span><span class="en">Arabic in your hands</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="english_hands.jpg" alt="الإنجليزية بين يديك" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">الإنجليزية بين يديك</span><span class="fr">L'Anglais entre vos mains</span><span class="en">English in your hands</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="french_hands.jpg" alt="الفرنسية بين يديك" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">الفرنسية بين يديك</span><span class="fr">Le Français entre vos mains</span><span class="en">French in your hands</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="dutch_learn.jpg" alt="الهولندية — Nederlands leren" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">الهولندية — Nederlands leren</span><span class="fr">Apprendre le Néerlandais</span><span class="en">Learn Dutch</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="tajweed_nl.png" alt="التجويد بالهولندية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">التجويد بالهولندية</span><span class="fr">Vereenvoudig de Tajweed</span><span class="en">Simplified Tajweed (Dutch)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="nawawi40.jpg" alt="الأربعون النووية باللغات" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">الأربعون النووية باللغات</span><span class="fr">Les 40 Hadiths An-Nawawi (multilingue)</span><span class="en">40 Hadiths An-Nawawi (multilingual)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="sira.jpg" alt="سيرة الرسول ﷺ" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">سيرة الرسول ﷺ</span><span class="fr">Biographie du Prophète ﷺ</span><span class="en">Biography of the Prophet ﷺ</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="madhahib.jpg" alt="المذاهب والأديان عبر العصور" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">المذاهب والأديان عبر العصور</span><span class="fr">Religions et Doctrines à travers les âges</span><span class="en">Religions & Doctrines through the ages</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="tarbiya.png" alt="التعليم والتربية السليمة" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">التعليم والتربية السليمة</span><span class="fr">Éducation et Pédagogie Saine</span><span class="en">Education and Sound Upbringing</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="with_child.jpg" alt="مع طفلي" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">مع طفلي</span><span class="fr">Avec mon enfant</span><span class="en">With my child</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="journal_quran.jpg" alt="مفكرتي القرآنية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">مفكرتي القرآنية</span><span class="fr">Mon Journal Coranique</span><span class="en">My Quran Journal</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="tajweed_fr.png" alt="التجويد السهل بالفرنسية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">التجويد السهل بالفرنسية</span><span class="fr">Le Tajwid Facile (Français)</span><span class="en">Easy Tajweed (French)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="tajweed_en.png" alt="التجويد المبسط بالإنجليزية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">التجويد المبسط بالإنجليزية</span><span class="fr">Simplified Tajweed (English)</span><span class="en">Simplified Tajweed (English)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="nouraniya_ar.jpg" alt="القاعدة النورانية بالعربية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">القاعدة النورانية بالعربية</span><span class="fr">Al Quaida Anouraniya (Arabe)</span><span class="en">Al Quaida Anouraniya (Arabic)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="nouraniya_fr.jpg" alt="القاعدة النورانية بالفرنسية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">القاعدة النورانية بالفرنسية</span><span class="fr">Al Quaida Anouraniya (Français)</span><span class="en">Al Quaida Anouraniya (French)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="nouraniya_en.jpg" alt="القاعدة النورانية بالإنجليزية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">القاعدة النورانية بالإنجليزية</span><span class="fr">Al Quaida Anouraniya (Anglais)</span><span class="en">Al Quaida Anouraniya (English)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="nouraniya_nl.jpg" alt="القاعدة النورانية بالهولندية" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">القاعدة النورانية بالهولندية</span><span class="fr">Al Quaida Anouraniya (Néerlandais)</span><span class="en">Al Quaida Anouraniya (Dutch)</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="history.jpg" alt="التاريخ.... ما قبل وما بعد" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">التاريخ.... ما قبل وما بعد</span><span class="fr">L'Histoire... avant et après</span><span class="en">History... before and after</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="tafsir.png" alt="تفسيري للقرآن" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">تفسيري للقرآن</span><span class="fr">Mon Tafsir du Coran</span><span class="en">My Tafsir of the Quran</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+      <div class="book-card"><img src="mojiza.jpg" alt="معجزة القرآن وما نعيشه" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-bottom:1px solid var(--w10);"><div class="book-info"><div class="book-title"><span class="ar">معجزة القرآن وما نعيشه</span><span class="fr">Le Miracle du Coran et notre vie</span><span class="en">The Miracle of the Quran & our life</span></div><div class="book-price">15€</div><a href="https://paypal.me/Asafaacademy/15" target="_blank" class="book-buy"><span class="ar">شراء 📥</span><span class="fr">Acheter 📥</span><span class="en">Buy 📥</span></a></div></div>
+    </div>
+    <p style="text-align:center;font-size:12px;color:var(--w30);margin-top:24px;"><span class="ar">🔒 بعد الدفع عبر PayPal، أرسلي إيصال الدفع وعنوان الكتاب عبر واتساب/إيميل لاستلام رابط التحميل</span><span class="fr">🔒 Après paiement, envoyez le reçu et le titre par WhatsApp/email</span><span class="en">🔒 After payment, send receipt and book title via WhatsApp/email</span></p>
+  </div>
+</section>
+
+<!-- Channels -->
+<section id="channels" style="background:var(--bg2)">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">قنوات تيليغرام</span><span class="fr">CANAUX TELEGRAM</span><span class="en">TELEGRAM CHANNELS</span></div>
+    <h2 class="sec-title"><span class="ar">كل <span class="grad">القنوات</span> في مكان واحد</span><span class="fr">Tous les <span class="grad">canaux</span></span><span class="en">All <span class="grad">channels</span></span></h2>
+    <p class="sec-sub"><span class="ar">انضمي للقنوات التعليمية المجانية على تيليغرام</span><span class="fr">Rejoignez les canaux éducatifs gratuits sur Telegram</span><span class="en">Join the free educational channels on Telegram</span></p>
+
+    <!-- Free note -->
+    <div style="background:linear-gradient(135deg,rgba(244,114,182,0.08),rgba(245,158,11,0.06));border:1px solid rgba(245,158,11,0.25);border-radius:14px;padding:20px 28px;margin-bottom:36px;display:flex;gap:16px;align-items:flex-start;">
+      <span style="font-size:32px;flex-shrink:0;">🎁</span>
+      <div>
+        <div style="font-size:15px;font-weight:800;color:var(--gold-l);margin-bottom:6px;">
+          <span class="ar">دروس مجانية مسجّلة — بدون حضور المعلمة</span>
+          <span class="fr">Cours gratuits enregistrés — sans présence de l'enseignante</span>
+          <span class="en">Free recorded lessons — without the teacher's presence</span>
+        </div>
+        <div style="font-size:13px;color:var(--w60);line-height:1.8;">
+          <span class="ar">هذه القنوات تحتوي على دروس مسجّلة يمكنك الاستفادة منها في أي وقت مجاناً. للتعلم المباشر مع المعلمة وتصحيح التلاوة، سجّلي في الحلقة.</span>
+          <span class="fr">Ces canaux contiennent des cours enregistrés que vous pouvez consulter à tout moment gratuitement. Pour apprendre en direct avec l'enseignante, inscrivez-vous au cercle.</span>
+          <span class="en">These channels contain recorded lessons you can benefit from anytime for free. For live learning with the teacher and recitation correction, register in the circle.</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--gold-l);font-weight:700;margin-bottom:14px;">📖 <span class="ar">قنوات تحفيظ القرآن</span><span class="fr">Canaux de mémorisation</span><span class="en">Memorization channels</span></p>
+    <div class="bento" style="margin-bottom:28px;">
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">📖 <span class="ar">الأجزاء 1–10</span><span class="fr">Parties 1–10</span><span class="en">Parts 1–10</span></div><div class="ch-grid">
+        <a href="https://t.me/+vmjBVd9GRaAxZDI0" target="_blank" class="item-ch">1/ البقرة</a>
+        <a href="https://t.me/+lpG2N6fTRfI0ZDFk" target="_blank" class="item-ch">2/ آل عمران</a>
+        <a href="https://t.me/+m6Leb7C5hRE3ZWY0" target="_blank" class="item-ch">3/ النساء</a>
+        <a href="https://t.me/+CkGBOIiViaw0MjVk" target="_blank" class="item-ch">4/ المائدة</a>
+        <a href="https://t.me/+9mz2neNE61owZTI0" target="_blank" class="item-ch">5/ الأنعام</a>
+        <a href="https://t.me/+kWgLiMqBAEBmNDg0" target="_blank" class="item-ch">6/ الأعراف</a>
+        <a href="https://t.me/+QWHEVpC2Op9lY2Zk" target="_blank" class="item-ch">7/ الأنفال</a>
+        <a href="https://t.me/+yr8jqmMdQ7w4NjI8" target="_blank" class="item-ch">8/ التوبة</a>
+        <a href="https://t.me/+dss7QuF6C3g4ZTNk" target="_blank" class="item-ch">9/ يونس</a>
+        <a href="https://t.me/+EDiIGtQA9MA0M2Vk" target="_blank" class="item-ch">10/ هود</a>
+      </div></div>
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">📖 <span class="ar">الأجزاء 11–20</span><span class="fr">Parties 11–20</span><span class="en">Parts 11–20</span></div><div class="ch-grid">
+        <a href="https://t.me/+m1YpsxJZ2DtkNTk0" target="_blank" class="item-ch">11/ يوسف</a>
+        <a href="https://t.me/+mOJ-sIYtu-cxZDA8" target="_blank" class="item-ch">12/ الرعد</a>
+        <a href="https://t.me/+t62JZJsapggzYjhk" target="_blank" class="item-ch">13/ الحجر</a>
+        <a href="https://t.me/+KGMsWRiQFWswYTc0" target="_blank" class="item-ch">14/ الإسراء</a>
+        <a href="https://t.me/+DnnGInM2ea84Njc8" target="_blank" class="item-ch">15/ طه</a>
+        <a href="https://t.me/+HXyzrd_TluJkZDY0" target="_blank" class="item-ch">16/ الأنبياء</a>
+        <a href="https://t.me/+ZWBdSPY6W-NkYzc0" target="_blank" class="item-ch">17/ المؤمنون</a>
+        <a href="https://t.me/+S2gogGJxw6I3Mzg0" target="_blank" class="item-ch">18/ الشعراء</a>
+        <a href="https://t.me/+RB1JYin6MvxkZTU0" target="_blank" class="item-ch">19/ القصص</a>
+        <a href="https://t.me/+3RfwTL4hMVRjZGI8" target="_blank" class="item-ch">20/ السجدة</a>
+      </div></div>
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">📖 <span class="ar">الأجزاء 21–29</span><span class="fr">Parties 21–29</span><span class="en">Parts 21–29</span></div><div class="ch-grid">
+        <a href="https://t.me/+6OBnrj3p08EwZjhk" target="_blank" class="item-ch">21/ فاطر</a>
+        <a href="https://t.me/+jVsBT89eWudkYzNk" target="_blank" class="item-ch">22/ يس</a>
+        <a href="https://t.me/+UlDuYDJVLMc4NmU0" target="_blank" class="item-ch">23/ الزمر</a>
+        <a href="https://t.me/+Q4cXS_apjhY3OGZk" target="_blank" class="item-ch">24/ الشورى</a>
+        <a href="https://t.me/+Jv6XiyTazB44MTU8" target="_blank" class="item-ch">25/ ق</a>
+        <a href="https://t.me/+FRT12I4l8U40Y2U0" target="_blank" class="item-ch">26/ الذاريات</a>
+        <a href="https://t.me/+4VPDOG2ZxUFkYWI0" target="_blank" class="item-ch">27/ المجادلة</a>
+        <a href="https://t.me/+MivmIcduZ_o1YWZk" target="_blank" class="item-ch">28/ تبارك</a>
+        <a href="https://t.me/+xWin81B-dJ82NWI0" target="_blank" class="item-ch">29/ عمّ</a>
+      </div></div>
+    </div>
+    <p style="font-size:13px;color:var(--gold-l);font-weight:700;margin-bottom:14px;">✨ <span class="ar">التجويد والنورانية والعلوم</span><span class="fr">Tajwid, Nourania & Sciences</span><span class="en">Tajwid, Nourania & Sciences</span></p>
+    <div class="bento" style="margin-bottom:28px;">
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">✨ <span class="ar">التجويد</span><span class="fr">Tajwid</span><span class="en">Tajwid</span></div><div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://t.me/+owWfHbL90K8xNDNk" target="_blank" class="item-ch">🇸🇦 بالعربية</a>
+        <a href="https://t.me/+naZkU7cjmKNjYWU0" target="_blank" class="item-ch">🇫🇷 Français</a>
+        <a href="https://t.me/+Hb4BzaLGctwzOTc0" target="_blank" class="item-ch">🇬🇧 English</a>
+        <a href="https://t.me/+zoYgm-HEDbJmNDk0" target="_blank" class="item-ch">🇳🇱 Nederlands</a>
+      </div></div>
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">🌟 <span class="ar">النورانية</span><span class="fr">Nourania</span><span class="en">Nourania</span></div><div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://t.me/+L7END94pLKI3YzE0" target="_blank" class="item-ch">🇸🇦 بالعربية</a>
+        <a href="https://t.me/+3E8Czn8wQs9lNDI0" target="_blank" class="item-ch">🇫🇷 Français</a>
+        <a href="https://t.me/+6USCsk938dE3OGY0" target="_blank" class="item-ch">🇬🇧 English</a>
+        <a href="https://t.me/+vos0JuLYzR81N2M0" target="_blank" class="item-ch">🇳🇱 Nederlands</a>
+      </div></div>
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">📚 <span class="ar">العلوم الشرعية</span><span class="fr">Sciences Islamiques</span><span class="en">Islamic Sciences</span></div><div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://t.me/+TADRglOVcCE3YzVk" target="_blank" class="item-ch">⚖️ الفقه</a>
+        <a href="https://t.me/+SPo4zjZHD900ZDU0" target="_blank" class="item-ch">🕋 العقيدة</a>
+        <a href="https://t.me/+feA6oqxS7xFmNjE0" target="_blank" class="item-ch">🌸 السيرة</a>
+        <a href="https://t.me/+JoBQqqrCVSc1MmU8" target="_blank" class="item-ch">📜 الأربعون النووية</a>
+      </div></div>
+    </div>
+    <p style="font-size:13px;color:var(--gold-l);font-weight:700;margin-bottom:14px;">🗣️ <span class="ar">اللغات والتخصصات</span><span class="fr">Langues & Spécialités</span><span class="en">Languages & Specialties</span></p>
+    <div class="bento">
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">🗣️ <span class="ar">اللغات</span><span class="fr">Langues</span><span class="en">Languages</span></div><div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://t.me/safaarabicacademy" target="_blank" class="item-ch">🇸🇦 العربية</a>
+        <a href="https://t.me/safaacademyfra" target="_blank" class="item-ch">🇫🇷 Français</a>
+        <a href="https://t.me/safaenglis" target="_blank" class="item-ch">🇬🇧 English</a>
+        <a href="https://t.me/asafaacademynederlands" target="_blank" class="item-ch">🇳🇱 Nederlands</a>
+      </div></div>
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">🧭 <span class="ar">التاريخ والفكر</span><span class="fr">Histoire & Pensée</span><span class="en">History & Thought</span></div><div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://t.me/fikhsafaacademy" target="_blank" class="item-ch">📜 التاريخ</a>
+        <a href="https://t.me/akidasafaacademy" target="_blank" class="item-ch">🕋 الأديان والفرق</a>
+        <a href="https://t.me/iijazsafaacademy" target="_blank" class="item-ch">🔬 الإعجاز العلمي</a>
+      </div></div>
+      <div class="bento-card"><div style="color:var(--gold-l);font-weight:700;font-size:14px;margin-bottom:12px;">🕊️ <span class="ar">التربية والتفسير</span><span class="fr">Éducation & Tafsir</span><span class="en">Education & Tafsir</span></div><div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://t.me/tiflysafaacademy" target="_blank" class="item-ch">👶 تربية الطفل</a>
+        <a href="https://t.me/+mNo_QRqTefwyZDA0" target="_blank" class="item-ch">📖 تفسير القرآن</a>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why -->
+<section id="why">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">مميزاتنا</span><span class="fr">NOS ATOUTS</span><span class="en">OUR FEATURES</span></div>
+    <h2 class="sec-title"><span class="ar">لماذا <span class="grad">ASAFA ACADEMY</span>؟</span><span class="fr">Pourquoi <span class="grad">ASAFA ACADEMY</span> ?</span><span class="en">Why <span class="grad">ASAFA ACADEMY</span>?</span></h2>
+    <p class="sec-sub"><span class="ar">بيئة علمية راقية تجمع الحفظ والتجويد واللغة والعلوم الشرعية</span><span class="fr">Un cadre d'excellence alliant mémorisation, tajwid et sciences islamiques</span><span class="en">A distinguished environment combining memorization, tajwid and Islamic sciences</span></p>
+    <div class="bento">
+      <div class="bento-hero-card" style="grid-column:span 2">
+        <div class="bg-text">🌙</div>
+        <span class="card-tag">✦ <span class="ar">الأساس</span><span class="fr">L'ESSENTIEL</span><span class="en">THE CORE</span></span>
+        <div style="font-size:clamp(20px,3vw,32px);font-weight:800;line-height:1.3;margin-bottom:12px;">
+          <span class="ar">حصة الفجر المباركة<br><span style="background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">من 3:00 إلى 5:00 صباحاً</span></span>
+          <span class="fr">La séance bénie du Fajr<br><span style="background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">De 3h à 5h du matin</span></span>
+          <span class="en">The blessed Fajr session<br><span style="background:linear-gradient(135deg,var(--pink),var(--gold-l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">From 3:00 to 5:00 AM</span></span>
+        </div>
+        <p style="color:rgba(255,255,255,0.6);font-size:14px;"><span class="ar">وقت الفجر المبارك لحفظ كلام الله — نبدأ كل يوم بأذكار الصباح 🤲 — للنساء فقط من 15 سنة</span><span class="fr">Le temps béni du Fajr pour mémoriser la Parole d'Allah — chaque séance commence par les adhkar 🤲 — Femmes uniquement dès 15 ans</span><span class="en">The blessed Fajr time — every session starts with morning adhkar 🤲 — Women only from 15 years</span></p>
+      </div>
+      <div class="bento-card">
+        <span style="font-size:32px;margin-bottom:14px;display:block">📖</span>
+        <span class="card-tag gold">✦ <span class="ar">الحفظ</span><span class="fr">MÉMORISATION</span><span class="en">MEMORIZATION</span></span>
+        <div style="font-size:17px;font-weight:700;margin-bottom:8px;"><span class="ar">حفظ منهجي متدرج</span><span class="fr">Mémorisation progressive</span><span class="en">Progressive memorization</span></div>
+        <p style="font-size:13px;color:var(--w60);"><span class="ar">30 جزءاً في 3 سنوات — 10 أجزاء كل سنة</span><span class="fr">30 parties en 3 ans — 10 parties par an</span><span class="en">30 parts in 3 years — 10 parts per year</span></p>
+      </div>
+      <div class="bento-card">
+        <span style="font-size:32px;margin-bottom:14px;display:block">🤲</span>
+        <span class="card-tag">✦ <span class="ar">الأذكار</span><span class="fr">DHIKR</span><span class="en">DHIKR</span></span>
+        <div style="font-size:17px;font-weight:700;margin-bottom:8px;"><span class="ar">أذكار في كل حصة</span><span class="fr">Dhikr à chaque séance</span><span class="en">Dhikr at every session</span></div>
+        <p style="font-size:13px;color:var(--w60);"><span class="ar">نبدأ كل يوم بأذكار الصباح المأثورة</span><span class="fr">Chaque séance commence par les adhkar matinaux</span><span class="en">Every session starts with morning adhkar</span></p>
+      </div>
+      <div class="bento-card">
+        <span style="font-size:32px;margin-bottom:14px;display:block">🎙</span>
+        <span class="card-tag">✦ <span class="ar">التصحيح</span><span class="fr">CORRECTION</span><span class="en">CORRECTION</span></span>
+        <div style="font-size:17px;font-weight:700;margin-bottom:8px;"><span class="ar">تصحيح يومي مباشر</span><span class="fr">Correction quotidienne</span><span class="en">Daily correction</span></div>
+        <p style="font-size:13px;color:var(--w60);"><span class="ar">تسميع وتصحيح التلاوة كل حصة + إرسال الحفظ على الخاص</span><span class="fr">Récitation et correction à chaque séance</span><span class="en">Recitation and correction every session</span></p>
+      </div>
+      <div class="bento-card">
+        <span style="font-size:32px;margin-bottom:14px;display:block">📚</span>
+        <span class="card-tag">✦ <span class="ar">العلوم</span><span class="fr">SCIENCES</span><span class="en">SCIENCES</span></span>
+        <div style="font-size:17px;font-weight:700;margin-bottom:8px;"><span class="ar">علوم متكاملة</span><span class="fr">Sciences complètes</span><span class="en">Complete sciences</span></div>
+        <p style="font-size:13px;color:var(--w60);"><span class="ar">تجويد، علوم شرعية، تفسير — كل يوم مادة مختلفة</span><span class="fr">Tajwid, sciences islamiques, tafsir — matière différente chaque jour</span><span class="en">Tajwid, Islamic sciences, tafsir — different subject each day</span></p>
+      </div>
+      <div class="bento-card">
+        <span style="font-size:32px;margin-bottom:14px;display:block">🏆</span>
+        <span class="card-tag gold">✦ <span class="ar">الشهادات</span><span class="fr">CERTIFICATS</span><span class="en">CERTIFICATES</span></span>
+        <div style="font-size:17px;font-weight:700;margin-bottom:8px;"><span class="ar">شهادة بختم الأكاديمية</span><span class="fr">Certificat de l'Académie</span><span class="en">Academy Certificate</span></div>
+        <p style="font-size:13px;color:var(--w60);"><span class="ar">لكل جزء محفوظ ولكل دورة علمية</span><span class="fr">Pour chaque Juz mémorisé et chaque cours</span><span class="en">For every Juz memorized and every course</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schedule -->
+<section id="schedule" style="background:var(--bg2)">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">التنظيم</span><span class="fr">ORGANISATION</span><span class="en">ORGANISATION</span></div>
+    <h2 class="sec-title"><span class="ar">البرنامج <span class="grad">التفصيلي</span></span><span class="fr">Programme <span class="grad">détaillé</span></span><span class="en">Detailed <span class="grad">Schedule</span></span></h2>
+    <p class="sec-sub"><span class="ar">للنساء فقط • ابتداءً من 15 سنة • 4 ساعات أسبوعياً • يومان في الأسبوع • 🎁 الحصة الأولى مجانية</span><span class="fr">Femmes uniquement • dès 15 ans • 4h/semaine • 2 jours/semaine • 🎁 1ère séance gratuite</span><span class="en">Women only • from 15 years • 4h/week • 2 days/week • 🎁 1st session free</span></p>
+    <!-- Groups -->
+    <div class="bento" style="margin-bottom:28px;">
+      <div class="bento-card"><div style="color:var(--pink);font-weight:800;font-size:14px;margin-bottom:10px;">🌙 <span class="ar">المجموعة الأولى</span><span class="fr">Groupe 1</span><span class="en">Group 1</span></div><p style="font-size:13px;color:var(--gold-l);font-weight:700;margin-bottom:4px;"><span class="ar">الإثنين والخميس</span><span class="fr">Lundi & Jeudi</span><span class="en">Monday & Thursday</span></p><p style="font-size:13px;color:var(--w60);">3:00 – 5:00 <span class="ar">صباحاً</span><span class="fr">du matin</span><span class="en">AM</span></p></div>
+      <div class="bento-card"><div style="color:var(--pink);font-weight:800;font-size:14px;margin-bottom:10px;">🌙 <span class="ar">المجموعة الثانية</span><span class="fr">Groupe 2</span><span class="en">Group 2</span></div><p style="font-size:13px;color:var(--gold-l);font-weight:700;margin-bottom:4px;"><span class="ar">الثلاثاء والجمعة</span><span class="fr">Mardi & Vendredi</span><span class="en">Tuesday & Friday</span></p><p style="font-size:13px;color:var(--w60);">3:00 – 5:00 <span class="ar">صباحاً</span><span class="fr">du matin</span><span class="en">AM</span></p></div>
+      <div class="bento-card"><div style="color:var(--pink);font-weight:800;font-size:14px;margin-bottom:10px;">🌙 <span class="ar">المجموعة الثالثة</span><span class="fr">Groupe 3</span><span class="en">Group 3</span></div><p style="font-size:13px;color:var(--gold-l);font-weight:700;margin-bottom:4px;"><span class="ar">الأربعاء والأحد</span><span class="fr">Mercredi & Dimanche</span><span class="en">Wednesday & Sunday</span></p><p style="font-size:13px;color:var(--w60);">3:00 – 5:00 <span class="ar">صباحاً</span><span class="fr">du matin</span><span class="en">AM</span></p></div>
+    </div>
+    <div class="sched-grid" style="margin-bottom:20px;">
+      <div class="sched-box">
+        <div class="sched-head">⏰ <span class="ar">برنامج الحصة — 3:00 إلى 5:00</span><span class="fr">Programme — 3h à 5h</span><span class="en">Session — 3:00 to 5:00</span></div>
+        <table class="sched-table">
+          <tr><td><span class="pill">3:00–3:15</span></td><td>🤲 <span class="ar">أذكار الصباح</span><span class="fr">Adhkar du matin</span><span class="en">Morning Adhkar</span></td></tr>
+          <tr><td><span class="pill">3:15–3:30</span></td><td>📚 <span class="ar">درس تجويدي</span><span class="fr">Cours de Tajwid</span><span class="en">Tajwid lesson</span></td></tr>
+          <tr><td><span class="pill">3:30–4:00</span></td><td>🎙 <span class="ar">تصحيح التلاوة للحفظ الجديد + استخراج الحكم التجويدي</span><span class="fr">Correction récitation + règle tajwid</span><span class="en">Recitation correction + tajwid rule</span></td></tr>
+          <tr><td><span class="pill">4:00–4:15</span></td><td>📖 <span class="ar">درس نورانية</span><span class="fr">Cours Nourania</span><span class="en">Nourania lesson</span></td></tr>
+          <tr><td><span class="pill">4:15–4:45</span></td><td>✍️ <span class="ar">تصحيح النورانية</span><span class="fr">Correction Nourania</span><span class="en">Nourania correction</span></td></tr>
+          <tr><td><span class="pill">4:45–5:00</span></td><td>🕌 <span class="ar">فقه / عقيدة / سيرة نبوية / الأربعون النووية</span><span class="fr">Fiqh / Aqida / Sira / 40 Hadiths</span><span class="en">Fiqh / Aqida / Sira / 40 Hadiths</span></td></tr>
+        </table>
+      </div>
+      <div class="sched-box">
+        <div class="sched-head">📅 <span class="ar">يوم السبت — مجموعات لغوية منفصلة</span><span class="fr">Samedi — groupes linguistiques</span><span class="en">Saturday — language groups</span></div>
+        <table class="sched-table">
+          <tr><td><span class="pill">3:00–4:00</span></td><td>🇬🇧 <span class="ar">المجموعة الإنجليزية</span><span class="fr">Groupe anglophone</span><span class="en">English group</span></td></tr>
+          <tr><td><span class="pill">4:00–5:00</span></td><td>🇫🇷 <span class="ar">المجموعة الفرنسية</span><span class="fr">Groupe francophone</span><span class="en">French group</span></td></tr>
+          <tr><td><span class="pill">5:00–6:00</span></td><td>🇸🇦 <span class="ar">المجموعة العربية</span><span class="fr">Groupe arabophone</span><span class="en">Arabic group</span></td></tr>
+        </table>
+        <div style="padding:12px 16px;font-size:12px;color:var(--w60);border-top:1px solid var(--w10);line-height:2;">
+          <span class="ar">📝 الطالبة ترسل حفظها للمعلمة على الخاص يومياً (عدا السبت)<br>✅ خيار: نصف صفحة أو صفحة كاملة للحفظ<br>❌ يوم السبت لا يوجد حفظ جديد<br>🌅 دروس إضافية أحياناً: 10:00 – 14:00 (نورانية / متن الجزرية بإجازة)</span>
+          <span class="fr">📝 L'étudiante envoie sa mémorisation en privé chaque jour (sauf samedi)<br>✅ Choix: demi-page ou page entière<br>❌ Pas de mémorisation le samedi<br>🌅 Cours supplémentaires occasionnels: 10h–14h</span>
+          <span class="en">📝 Student sends memorization privately daily (except Saturday)<br>✅ Choice: half page or full page<br>❌ No memorization on Saturday<br>🌅 Occasional extra classes: 10:00 AM–2:00 PM</span>
+        </div>
+      </div>
+    </div>
+    <!-- Ijaza -->
+    <div class="bento-card" style="border:1px solid rgba(245,158,11,0.3);">
+      <div style="color:var(--gold-l);font-weight:800;font-size:15px;margin-bottom:14px;">🏆 <span class="ar">دروس بالإجازة</span><span class="fr">Cours avec Ijaza</span><span class="en">Courses with Ijaza</span></div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:140px;background:var(--gold-dim);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:20px;margin-bottom:6px;">📜</div><div style="font-size:13px;font-weight:700;color:var(--gold-l);"><span class="ar">القاعدة النورانية</span><span class="fr">Méthode Nourania</span><span class="en">Nourania Method</span></div></div>
+        <div style="flex:1;min-width:140px;background:var(--gold-dim);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:20px;margin-bottom:6px;">📜</div><div style="font-size:13px;font-weight:700;color:var(--gold-l);"><span class="ar">متن الجزرية</span><span class="fr">Matn Al-Jazariyya</span><span class="en">Matn Al-Jazariyya</span></div></div>
+        <div style="flex:1;min-width:140px;background:var(--gold-dim);border-radius:10px;padding:12px;text-align:center;"><div style="font-size:20px;margin-bottom:6px;">📜</div><div style="font-size:13px;font-weight:700;color:var(--gold-l);"><span class="ar">تحفة الأطفال</span><span class="fr">Tuhfat Al-Atfal</span><span class="en">Tuhfat Al-Atfal</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Plan -->
+<section id="plan">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">الخطة الكبرى</span><span class="fr">LE GRAND PLAN</span><span class="en">THE BIG PLAN</span></div>
+    <h2 class="sec-title"><span class="ar">رحلة <span class="grad">ثلاث سنوات</span></span><span class="fr">Voyage de <span class="grad">trois ans</span></span><span class="en">A <span class="grad">three-year</span> journey</span></h2>
+    <p class="sec-sub"><span class="ar">من اليوم الأول حتى ختم القرآن الكريم بإتقان</span><span class="fr">Du premier jour jusqu'à la mémorisation complète</span><span class="en">From day one until completing the Quran</span></p>
+    <div style="background:var(--gold-dim);border:1px solid rgba(245,158,11,0.3);border-radius:var(--r2);padding:14px 20px;margin-bottom:36px;text-align:center;font-size:13px;color:var(--gold-l);">
+      🏆 <strong><span class="ar">شهادة بختم الأكاديمية</span><span class="fr">Certificat signé par l'Académie</span><span class="en">Academy Certificate</span></strong> — <span class="ar">لكل جزء محفوظ ولكل دورة في العلوم الشرعية والتجويد والتفسير</span><span class="fr">Pour chaque Juz mémorisé et chaque cours de sciences islamiques, tajwid et tafsir</span><span class="en">For every memorized Juz and every course in Islamic sciences, tajwid and tafsir</span>
+    </div>
+    <div class="years-grid">
+      <div class="year-card">
+        <div class="year-num">I</div>
+        <div class="year-label"><span class="ar">السنة الأولى</span><span class="fr">Première Année</span><span class="en">Year One</span></div>
+        <div class="year-title"><span class="ar">الأساس والبداية</span><span class="fr">Les Fondations</span><span class="en">The Foundations</span></div>
+        <ul>
+          <li><span class="ar">إتقان القراءة والقاعدة النورانية</span><span class="fr">Maîtrise de la lecture et Nourania</span><span class="en">Reading mastery and Nourania</span></li>
+          <li><span class="ar">حفظ 10 أجزاء (من جزء 30 إلى جزء 21)</span><span class="fr">10 parties mémorisées (Juz' 30 à 21)</span><span class="en">10 parts memorized (Juz' 30 to 21)</span></li>
+          <li><span class="ar">أحكام التجويد الأساسية</span><span class="fr">Règles fondamentales du tajwid</span><span class="en">Fundamental tajwid rules</span></li>
+          <li><span class="ar">أساسيات العقيدة والفقه</span><span class="fr">Bases de la croyance et du fiqh</span><span class="en">Basics of creed and fiqh</span></li>
+          <li><span class="ar">تفسير السور المحفوظة</span><span class="fr">Tafsir des sourates mémorisées</span><span class="en">Tafsir of memorized surahs</span></li>
+        </ul>
+      </div>
+      <div class="year-card">
+        <div class="year-num">II</div>
+        <div class="year-label"><span class="ar">السنة الثانية</span><span class="fr">Deuxième Année</span><span class="en">Year Two</span></div>
+        <div class="year-title"><span class="ar">التعمق والتطور</span><span class="fr">L'Approfondissement</span><span class="en">Deepening & Growth</span></div>
+        <ul>
+          <li><span class="ar">20 جزءاً إجمالاً (+10 من جزء 20 إلى جزء 11)</span><span class="fr">20 parties au total (+10 Juz' 20 à 11)</span><span class="en">20 parts total (+10 Juz' 20 to 11)</span></li>
+          <li><span class="ar">تحسين الترتيل والأداء</span><span class="fr">Amélioration de la récitation</span><span class="en">Improving recitation</span></li>
+          <li><span class="ar">السيرة النبوية</span><span class="fr">La Sira du Prophète ﷺ</span><span class="en">The Prophet's Sira ﷺ</span></li>
+          <li><span class="ar">الأربعون النووية</span><span class="fr">Les 40 Hadiths An-Nawawi</span><span class="en">The 40 Hadiths An-Nawawi</span></li>
+        </ul>
+      </div>
+      <div class="year-card">
+        <div class="year-num">III</div>
+        <div class="year-label"><span class="ar">السنة الثالثة</span><span class="fr">Troisième Année</span><span class="en">Year Three</span></div>
+        <div class="year-title"><span class="ar">الإتقان والختم</span><span class="fr">La Maîtrise & l'Achèvement</span><span class="en">Mastery & Completion</span></div>
+        <ul>
+          <li><span class="ar">ختم القرآن كاملاً — 30 جزءاً (+10 من جزء 10 إلى جزء 1)</span><span class="fr">Achèvement complet — 30 parties (+10 Juz' 10 à 1)</span><span class="en">Complete Quran — 30 parts (+10 Juz' 10 to 1)</span></li>
+          <li><span class="ar">مراجعة القرآن كاملاً</span><span class="fr">Révision complète du Coran</span><span class="en">Complete Quran revision</span></li>
+          <li><span class="ar">التاريخ الإسلامي والأديان والفرق</span><span class="fr">Histoire islamique, religions et sectes</span><span class="en">Islamic history, religions and sects</span></li>
+          <li><span class="ar">الإعجاز العلمي للقرآن والسنة</span><span class="fr">Miracle scientifique du Coran et de la Sunna</span><span class="en">Scientific miracles of Quran and Sunnah</span></li>
+          <li><span class="ar">تربية الطفل في الإسلام</span><span class="fr">Éducation de l'enfant en Islam</span><span class="en">Child education in Islam</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Levels -->
+<section id="levels" style="background:var(--bg2)">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">المستويات</span><span class="fr">NIVEAUX</span><span class="en">LEVELS</span></div>
+    <h2 class="sec-title"><span class="ar">لكل مستوى <span class="grad">مكانها</span></span><span class="fr">À chaque niveau <span class="grad">sa place</span></span><span class="en">Every level has <span class="grad">its place</span></span></h2>
+    <p class="sec-sub"><span class="ar">نرحب بك أياً كان مستواكِ</span><span class="fr">Bienvenue quel que soit votre niveau</span><span class="en">Welcome whatever your level</span></p>
+    <div class="levels-bento">
+      <div class="level-card"><span class="level-emoji">🌱</span><div class="level-num"><span class="ar">المستوى الأول</span><span class="fr">Niveau I</span><span class="en">Level I</span></div><div class="level-title"><span class="ar">المبتدئة</span><span class="fr">Débutante</span><span class="en">Beginner</span></div><p class="level-desc"><span class="ar">نتعلم القراءة من الصفر بطريقة النورانية</span><span class="fr">On apprend à lire depuis zéro avec la méthode Nourania</span><span class="en">Learning to read from scratch with the Nourania method</span></p></div>
+      <div class="level-card"><span class="level-emoji">📖</span><div class="level-num"><span class="ar">المستوى الثاني</span><span class="fr">Niveau II</span><span class="en">Level II</span></div><div class="level-title"><span class="ar">القارئة</span><span class="fr">Intermédiaire</span><span class="en">Intermediate</span></div><p class="level-desc"><span class="ar">تحفظين أجزاء متفرقة ونكمل الرحلة معاً</span><span class="fr">Vous mémorisez des parties et on continue ensemble</span><span class="en">You memorize parts and we continue the journey together</span></p></div>
+      <div class="level-card"><span class="level-emoji">🏆</span><div class="level-num"><span class="ar">المستوى الثالث</span><span class="fr">Niveau III</span><span class="en">Level III</span></div><div class="level-title"><span class="ar">الحافظة</span><span class="fr">Hafidha</span><span class="en">Hafidha</span></div><p class="level-desc"><span class="ar">تسعين للإتقان — نصل معاً لأعلى المراتب</span><span class="fr">Vous visez la perfection — on atteint l'excellence ensemble</span><span class="en">You aim for perfection — we reach excellence together</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Subscription -->
+<section id="sub">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">الاشتراك</span><span class="fr">ABONNEMENT</span><span class="en">SUBSCRIPTION</span></div>
+    <h2 class="sec-title"><span class="ar">اختاري <span class="grad">باقتكِ</span></span><span class="fr">Choisissez votre <span class="grad">formule</span></span><span class="en">Choose your <span class="grad">plan</span></span></h2>
+    <p class="sec-sub"><span class="ar">🎁 الحصة الأولى مجانية — للتعريف بالأكاديمية وتحديد المستوى</span><span class="fr">🎁 Première séance gratuite — pour découvrir l'académie</span><span class="en">🎁 First session free — to discover the academy</span></p>
+    <div class="sub-bento">
+      <div class="sub-price-card">
+        <div>
+          <div class="sub-tag"><span class="ar">الباقة الشهرية</span><span class="fr">FORMULE MENSUELLE</span><span class="en">MONTHLY PLAN</span></div>
+          <div class="sub-big">35€</div>
+          <div class="sub-period"><span class="ar">/ شهر — قابل للتجديد</span><span class="fr">/ mois — renouvelable</span><span class="en">/ month — renewable</span></div>
+          <div style="margin:16px 0;padding:12px;background:rgba(255,255,255,0.06);border-radius:10px;font-size:12px;color:rgba(255,255,255,0.5);">
+            <span class="ar">💡 الباقة السنوية: 300€ (بدل 420€ — وفّري 120€)</span>
+            <span class="fr">💡 Formule annuelle: 300€ (au lieu de 420€ — économisez 120€)</span>
+            <span class="en">💡 Yearly plan: 300€ (instead of 420€ — save 120€)</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a href="https://paypal.me/Asafaacademy/35" target="_blank" style="background:white;color:var(--bg);padding:13px;text-align:center;border-radius:50px;font-size:13px;font-weight:800;text-decoration:none;display:block;"><span class="ar">ادفعي 35€ شهرياً 💳</span><span class="fr">Payer 35€/mois 💳</span><span class="en">Pay 35€/month 💳</span></a>
+          <a href="https://paypal.me/Asafaacademy/300" target="_blank" style="background:linear-gradient(135deg,var(--gold),var(--pink-deep));color:white;padding:13px;text-align:center;border-radius:50px;font-size:13px;font-weight:800;text-decoration:none;display:block;"><span class="ar">ادفعي 300€ سنوياً ✨</span><span class="fr">Payer 300€/an ✨</span><span class="en">Pay 300€/year ✨</span></a>
+        </div>
+      </div>
+      <div class="sub-features-card">
+        <ul>
+          <li><span class="ar">حصتان أسبوعياً — كل حصة ساعتان (3:00–5:00)</span><span class="fr">2 séances/semaine — 2h chacune (3h–5h)</span><span class="en">2 sessions/week — 2h each (3:00–5:00)</span></li>
+          <li><span class="ar">اختيار المجموعة المناسبة لجدولك</span><span class="fr">Choix du groupe selon votre emploi du temps</span><span class="en">Choice of group fitting your schedule</span></li>
+          <li><span class="ar">تصحيح يومي على الخاص (عدا السبت)</span><span class="fr">Correction quotidienne en privé (sauf samedi)</span><span class="en">Daily private correction (except Saturday)</span></li>
+          <li><span class="ar">شهادة بختم الأكاديمية لكل جزء ودورة</span><span class="fr">Certificat de l'Académie pour chaque Juz et cours</span><span class="en">Academy certificate for every Juz and course</span></li>
+          <li><span class="ar">🎁 الحصة الأولى مجانية تماماً</span><span class="fr">🎁 Première séance 100% gratuite</span><span class="en">🎁 First session 100% free</span></li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:12px;color:var(--w30);margin-top:20px;">🔒 <span class="ar">الدفع آمن عبر PayPal — بعد الدفع أرسلي إيصال الدفع لتأكيد التسجيل</span><span class="fr">Paiement sécurisé via PayPal — envoyez le reçu après paiement</span><span class="en">Secure PayPal payment — send receipt to confirm registration</span></p>
+  </div>
+</section>
+
+<!-- Register -->
+<section id="register" style="background:var(--bg2)">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">الانضمام</span><span class="fr">INSCRIPTION</span><span class="en">JOIN US</span></div>
+    <h2 class="sec-title"><span class="ar">ابدئي <span class="grad">رحلتكِ</span></span><span class="fr">Commencez <span class="grad">votre voyage</span></span><span class="en">Begin <span class="grad">your journey</span></span></h2>
+    <p class="sec-sub" style="margin-bottom:40px"><span class="ar">🎁 الحصة الأولى مجانية — سجّلي الآن واكتشفي أكاديميتك</span><span class="fr">🎁 1ère séance gratuite — inscrivez-vous et découvrez l'académie</span><span class="en">🎁 1st session free — register now and discover the academy</span></p>
+    <div class="form-card" style="text-align:center;">
+      <span style="font-size:64px;display:block;margin-bottom:20px;">🌙</span>
+      <h3 style="font-size:22px;font-weight:800;margin-bottom:14px;">
+        <span class="ar">جاهزة لتبدئي رحلتكِ؟</span><span class="fr">Prête à commencer votre voyage ?</span><span class="en">Ready to start your journey?</span>
+      </h3>
+      <p style="font-size:14px;color:var(--w60);margin-bottom:32px;line-height:1.8;">
+        <span class="ar">اضغطي على الزر لفتح نموذج التسجيل. يستغرق دقيقتين فقط 🤍</span>
+        <span class="fr">Cliquez sur le bouton pour ouvrir le formulaire. Cela prend 2 minutes 🤍</span>
+        <span class="en">Click the button to open the registration form. It takes just 2 minutes 🤍</span>
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7ZipsNpdznrmeEadtK8jDEGsnA04ZprDRgc-dIJ_B8MxmrA/viewform" target="_blank" class="btn-pink" style="display:inline-block;">
+        <span class="ar">📝 فتح نموذج التسجيل</span><span class="fr">📝 Ouvrir le formulaire</span><span class="en">📝 Open registration form</span>
+      </a>
+      <p style="font-size:12px;color:var(--w30);margin-top:20px;">
+        <span class="ar">سيُفتح في صفحة Google Forms جديدة</span><span class="fr">S'ouvrira sur Google Forms</span><span class="en">Will open on Google Forms</span>
+      </p>
+    </div>
+    <!-- Teacher certs video -->
+    <div style="margin-top:48px;text-align:center;">
+      <div style="display:inline-block;background:var(--gold-dim);border:1px solid rgba(245,158,11,0.25);border-radius:12px;padding:8px 24px;font-size:12px;font-weight:700;color:var(--gold-l);margin-bottom:20px;">
+        🏆 <span class="ar">شاهدي شهاداتي وإجازاتي</span><span class="fr">Regardez mes certificats et Ijazas</span><span class="en">Watch my certificates and Ijazas</span>
+      </div>
+      <div style="max-width:420px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,0.4);border:1px solid var(--w10);">
+        <div style="position:relative;padding-bottom:177.78%;height:0;">
+          <iframe src="https://www.youtube.com/embed/q_t9zvui4fo" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Story -->
+<section id="story" style="background:var(--bg2);">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">قصتي</span><span class="fr">MON HISTOIRE</span><span class="en">MY STORY</span></div>
+    <h2 class="sec-title"><span class="ar">لماذا أسّست <span class="grad">أكاديمية الصفا</span>؟</span><span class="fr">Pourquoi j'ai fondé <span class="grad">ASAFA Academy</span> ?</span><span class="en">Why I founded <span class="grad">ASAFA Academy</span>?</span></h2>
+
+    <div class="story-grid">
+      <!-- Quote 1 -->
+      <div class="story-quote">
+        <div class="story-q-mark">❝</div>
+        <p class="story-q-text"><span class="ar">خيركم من تعلّم القرآن وعلّمه</span><span class="fr">Le meilleur d'entre vous est celui qui apprend le Coran et l'enseigne</span><span class="en">The best among you is the one who learns the Quran and teaches it</span></p>
+        <div class="story-q-src"><span class="ar">صحيح البخاري — النبي ﷺ</span><span class="fr">Sahih Al-Bukhari — Le Prophète ﷺ</span><span class="en">Sahih Al-Bukhari — The Prophet ﷺ</span></div>
+      </div>
+      <!-- Quote 2 -->
+      <div class="story-quote">
+        <div class="story-q-mark">❝</div>
+        <p class="story-q-text"><span class="ar">من كتم علماً لُجم بلجام من النار</span><span class="fr">Celui qui dissimule un savoir sera bridé d'un frein de feu</span><span class="en">Whoever conceals knowledge will be bridled with a bridle of fire</span></p>
+        <div class="story-q-src"><span class="ar">النبي ﷺ</span><span class="fr">Le Prophète ﷺ</span><span class="en">The Prophet ﷺ</span></div>
+      </div>
+      <!-- Quran -->
+      <div class="story-quote" style="background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(244,114,182,0.06));border-color:rgba(245,158,11,0.25);">
+        <div class="story-q-mark" style="color:var(--gold-l);">﴿</div>
+        <p class="story-q-text" style="color:var(--gold-l);font-size:22px;">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
+        <div class="story-q-src"><span class="ar">سورة العلق — أول ما نزل من القرآن الكريم</span><span class="fr">Sourate Al-'Alaq — premier verset révélé</span><span class="en">Surah Al-'Alaq — first verse ever revealed</span></div>
+      </div>
+    </div>
+
+    <!-- Personal story -->
+    <div class="story-text-card">
+      <div class="story-avatar">🌙</div>
+      <div class="story-text">
+        <p>
+          <span class="ar">أسّست أكاديمية الصفا الدولية استناداً إلى هذه النصوص المضيئة. لقد بذلت سنوات في تعلّم القرآن الكريم والتجويد والعلوم الشرعية واللغات — من مصر إلى السعودية وبلجيكا — وكان من الواجب عليّ ألا أحتفظ بهذا العلم لنفسي.</span>
+          <span class="fr">J'ai fondé ASAFA Academy en m'appuyant sur ces textes lumineux. J'ai consacré des années à apprendre le Coran, le Tajwid, les sciences islamiques et les langues — de l'Égypte à l'Arabie Saoudite en passant par la Belgique — et il était de mon devoir de ne pas garder ce savoir pour moi seule.</span>
+          <span class="en">I founded ASAFA Academy guided by these luminous texts. I spent years learning the Quran, Tajwid, Islamic sciences and languages — from Egypt to Saudi Arabia and Belgium — and it was my duty not to keep this knowledge to myself.</span>
+        </p>
+        <p>
+          <span class="ar">كما طوّرت نفسي بالعلم، أردت أن أطوّر أخواتي من النساء. ففتحت هذه الأكاديمية الرقمية لتكون وعاءً يجمع كل ما تعلّمته، وأرسله إلى كل امرأة تريد أن تقرأ كتاب ربها وتفهمه وتحفظه — أينما كانت في العالم.</span>
+          <span class="fr">Comme je me suis perfectionnée par le savoir, je voulais perfectionner mes sœurs. J'ai donc ouvert cette académie numérique pour rassembler tout ce que j'ai appris et le transmettre à toute femme souhaitant lire, comprendre et mémoriser le Livre de son Seigneur — où qu'elle soit dans le monde.</span>
+          <span class="en">Just as I developed myself through knowledge, I wanted to develop my sisters. So I opened this digital academy to gather everything I have learned and pass it on to every woman who wants to read, understand and memorize the Book of her Lord — wherever she is in the world.</span>
+        </p>
+        <div class="story-sig">— <span class="ar">المعلمة صفاء ربعاوي، مؤسسة أكاديمية الصفا الدولية</span><span class="fr">L'enseignante Safaa Rabaawi, fondatrice d'ASAFA Academy</span><span class="en">Teacher Safaa Rabaawi, founder of ASAFA Academy</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teacher -->
+<section id="teacher">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">تعرفي على معلمتك</span><span class="fr">VOTRE ENSEIGNANTE</span><span class="en">YOUR TEACHER</span></div>
+    <h2 class="sec-title"><span class="ar">المعلمة <span class="grad">صفاء ربعاوي</span></span><span class="fr">L'enseignante <span class="grad">Safaa Rabaawi</span></span><span class="en">Teacher <span class="grad">Safaa Rabaawi</span></span></h2>
+    <p class="sec-sub" style="margin-bottom:52px;">
+      <span class="ar">مؤسسة أكاديمية الصفا الدولية — مجازة في القرآن والتجويد والعلوم الشرعية واللغات</span>
+      <span class="fr">Fondatrice d'ASAFA Academy — certifiée en Coran, Tajwid, sciences islamiques et langues</span>
+      <span class="en">Founder of ASAFA Academy — certified in Quran, Tajwid, Islamic sciences and languages</span>
+    </p>
+
+    <div class="teacher-grid">
+
+      <div class="teacher-cat">
+        <div class="teacher-cat-title">📖 <span class="ar">القرآن والتجويد</span><span class="fr">Coran & Tajwid</span><span class="en">Quran & Tajwid</span></div>
+        <ul class="teacher-list">
+          <li><span class="ar">إجازة في تحفة الأطفال ومتن الجزرية — مصر</span><span class="fr">Ijaza en Tuhfat Al-Atfal et Matn Al-Jazariyya — Égypte</span><span class="en">Ijaza in Tuhfat Al-Atfal and Matn Al-Jazariyya — Egypt</span></li>
+          <li><span class="ar">شهادة التجويد النظري والتطبيقي — قراءة حفص عن عاصم — السعودية</span><span class="fr">Certificat Tajwid théorique et pratique — lecture Hafs — Arabie Saoudite</span><span class="en">Theoretical & practical Tajwid certificate — Hafs reading — Saudi Arabia</span></li>
+          <li><span class="ar">إجازة في القاعدة النورانية — قراءة الحقاني وأسامة القارئ — مصر</span><span class="fr">Ijaza en Al-Qaida An-Nourania — lecture Al-Huqani et Oussama — Égypte</span><span class="en">Ijaza in Al-Qaida An-Nourania — Al-Huqani & Oussama readings — Egypt</span></li>
+          <li><span class="ar">إجازة في دورة نور البيان — مصر</span><span class="fr">Ijaza en Nour Al-Bayan — Égypte</span><span class="en">Ijaza in Nour Al-Bayan — Egypt</span></li>
+        </ul>
+      </div>
+
+      <div class="teacher-cat">
+        <div class="teacher-cat-title">🕋 <span class="ar">العلوم الشرعية</span><span class="fr">Sciences Islamiques</span><span class="en">Islamic Sciences</span></div>
+        <ul class="teacher-list">
+          <li><span class="ar">متخرجة من أكاديمية زاد — فقه، عقيدة، سيرة، حديث، تفسير</span><span class="fr">Diplômée de l'Académie Zad — Fiqh, Aqida, Sira, Hadith, Tafsir</span><span class="en">Graduate of Zad Academy — Fiqh, Aqida, Sira, Hadith, Tafsir</span></li>
+          <li><span class="ar">إجازة في الأربعين النووية — الإمام النووي</span><span class="fr">Ijaza dans les 40 Hadiths An-Nawawi</span><span class="en">Ijaza in the 40 Hadiths An-Nawawi</span></li>
+          <li><span class="ar">شهادات من أكاديمية مُذَّكِر للتفسير</span><span class="fr">Certificats de l'Académie Mudhakkar (Tafsir)</span><span class="en">Certificates from Mudhakkar Academy (Tafsir)</span></li>
+          <li><span class="ar">شهادة في دورة الصحابيات والصحابة</span><span class="fr">Certificat sur les Compagnons du Prophète ﷺ</span><span class="en">Certificate on the Companions of the Prophet ﷺ</span></li>
+        </ul>
+      </div>
+
+      <div class="teacher-cat">
+        <div class="teacher-cat-title">🗣️ <span class="ar">اللغات</span><span class="fr">Langues</span><span class="en">Languages</span></div>
+        <ul class="teacher-list">
+          <li><span class="ar">إجازة أساسية في اللغة والآداب والحضارة الإنجليزية</span><span class="fr">Licence en langue, littérature et civilisation anglaise</span><span class="en">Bachelor's degree in English language, literature & civilization</span></li>
+          <li><span class="ar">شهادة British Council — English for the Workspace</span><span class="fr">Certificat British Council — English for the Workspace</span><span class="en">British Council certificate — English for the Workspace</span></li>
+          <li><span class="ar">درجة 3.1 في اللغة الهولندية/الفلامانية</span><span class="fr">Niveau 3.1 en néerlandais/flamand</span><span class="en">Level 3.1 in Dutch/Flemish</span></li>
+          <li><span class="ar">متقنة للغة الفرنسية والعربية</span><span class="fr">Maîtrise parfaite du français et de l'arabe</span><span class="en">Full mastery of French and Arabic</span></li>
+        </ul>
+      </div>
+
+      <div class="teacher-cat">
+        <div class="teacher-cat-title">💻 <span class="ar">التقنية والرقمي</span><span class="fr">Technologie & Digital</span><span class="en">Technology & Digital</span></div>
+        <ul class="teacher-list">
+          <li><span class="ar">شهادة ICDL والمبادئ التكنولوجية وتحسين محركات البحث</span><span class="fr">Certificat ICDL, principes technologiques et SEO</span><span class="en">ICDL certificate, tech principles and SEO</span></li>
+          <li><span class="ar">شهادة PC Skills — Word, Excel, PowerPoint, Database</span><span class="fr">Certificat PC Skills — Word, Excel, PowerPoint, Base de données</span><span class="en">PC Skills certificate — Word, Excel, PowerPoint, Database</span></li>
+          <li><span class="ar">شهادة في بناء المواقع بـ WordPress</span><span class="fr">Certificat en création de sites avec WordPress</span><span class="en">Website building certificate with WordPress</span></li>
+          <li><span class="ar">شهادة في البرمجة بلغة HTML</span><span class="fr">Certificat en programmation HTML</span><span class="en">HTML programming certificate</span></li>
+        </ul>
+      </div>
+
+      <div class="teacher-cat">
+        <div class="teacher-cat-title">🧒 <span class="ar">التربية والطفولة</span><span class="fr">Éducation & Enfance</span><span class="en">Education & Childhood</span></div>
+        <ul class="teacher-list">
+          <li><span class="ar">شهادة في الصحة النفسية للطفل وأسس التربية السليمة</span><span class="fr">Certificat en santé psychologique de l'enfant et principes d'éducation</span><span class="en">Certificate in child psychological health and educational foundations</span></li>
+        </ul>
+      </div>
+
+      <div class="teacher-cat" style="background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(244,114,182,0.08));border-color:rgba(245,158,11,0.25);">
+        <div class="teacher-cat-title">📚 <span class="ar">المؤلفات</span><span class="fr">Publications</span><span class="en">Publications</span></div>
+        <div style="text-align:center;padding:16px 0;">
+          <div style="font-size:52px;font-weight:900;background:linear-gradient(135deg,var(--gold-l),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;">23</div>
+          <div style="font-size:14px;font-weight:700;color:var(--white);margin:8px 0 4px;">
+            <span class="ar">كتاباً مترجماً</span><span class="fr">livres traduits</span><span class="en">translated books</span>
+          </div>
+          <div style="font-size:12px;color:var(--w60);">🇸🇦 🇫🇷 🇬🇧 🇳🇱</div>
+          <div style="font-size:11px;color:var(--w30);margin-top:8px;">
+            <span class="ar">عربي • فرنسي • إنجليزي • فلاماني</span>
+            <span class="fr">Arabe • Français • Anglais • Flamand</span>
+            <span class="en">Arabic • French • English • Flemish</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section id="certs" style="background:var(--bg2);overflow:hidden;">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">نتائج حقيقية</span><span class="fr">RÉSULTATS RÉELS</span><span class="en">REAL RESULTS</span></div>
+    <h2 class="sec-title"><span class="ar">شهادات <span class="grad">طالباتنا</span></span><span class="fr">Certificats de <span class="grad">nos étudiantes</span></span><span class="en">Our students' <span class="grad">certificates</span></span></h2>
+    <p class="sec-sub" style="margin-bottom:40px;">
+      <span class="ar">نتائج حقيقية لطالبات اجتزن الاختبارات بتفوق 🏆</span>
+      <span class="fr">Résultats réels d'étudiantes ayant brillamment réussi leurs examens 🏆</span>
+      <span class="en">Real results of students who passed their exams with excellence 🏆</span>
+    </p>
+
+    <!-- Stats bar -->
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-bottom:48px;">
+      <div style="background:var(--bg3);border:1px solid rgba(245,158,11,0.2);border-radius:12px;padding:14px 28px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--gold-l);">11+</div>
+        <div style="font-size:12px;color:var(--w60);"><span class="ar">شهادة مسلّمة</span><span class="fr">Certificats délivrés</span><span class="en">Certificates issued</span></div>
+      </div>
+      <div style="background:var(--bg3);border:1px solid rgba(244,114,182,0.2);border-radius:12px;padding:14px 28px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--pink);">98%</div>
+        <div style="font-size:12px;color:var(--w60);"><span class="ar">أعلى نتيجة</span><span class="fr">Meilleur résultat</span><span class="en">Top result</span></div>
+      </div>
+      <div style="background:var(--bg3);border:1px solid rgba(245,158,11,0.2);border-radius:12px;padding:14px 28px;text-align:center;">
+        <div style="font-size:28px;font-weight:900;color:var(--gold-l);">🌍</div>
+        <div style="font-size:12px;color:var(--w60);"><span class="ar">طالبات من دول متعددة</span><span class="fr">Étudiantes de plusieurs pays</span><span class="en">Students from multiple countries</span></div>
+      </div>
+    </div>
+
+    <!-- Scrollable certs -->
+    <div class="certs-track-wrap">
+      <div class="certs-track" id="certsTrack">
+        <div class="cert-card"><img src="cert1.jpg" alt="تسابيح منتصر — إعداد معلمات 89%" loading="lazy"><div class="cert-info"><span class="cert-name">تسابيح منتصر</span><span class="cert-score">89% · جيد جدا</span></div></div>
+        <div class="cert-card"><img src="cert2.jpg" alt="أسماء عبد الرؤوف — 96% ممتاز" loading="lazy"><div class="cert-info"><span class="cert-name">أسماء عبد الرؤوف</span><span class="cert-score">96% · ممتاز</span></div></div>
+        <div class="cert-card"><img src="cert3.jpg" alt="فاطمة نصر الدين — التجويد 38/48" loading="lazy"><div class="cert-info"><span class="cert-name">فاطمة نصر الدين</span><span class="cert-score">38/48 · جيد</span></div></div>
+        <div class="cert-card"><img src="cert4.jpg" alt="أسماء محبوب — التجويد 44/48" loading="lazy"><div class="cert-info"><span class="cert-name">أسماء محمد محبوب</span><span class="cert-score">44/48 · جيد جدا</span></div></div>
+        <div class="cert-card"><img src="cert5.jpg" alt="إسلام محمد — التجويد 38/48" loading="lazy"><div class="cert-info"><span class="cert-name">إسلام محمد أحمد</span><span class="cert-score">38/48 · جيد</span></div></div>
+        <div class="cert-card"><img src="cert6.jpg" alt="سمية حسن — 98% ممتاز" loading="lazy"><div class="cert-info"><span class="cert-name">سمية حسن محمد</span><span class="cert-score">98% · ممتاز</span></div></div>
+        <div class="cert-card"><img src="cert7.jpg" alt="عفاف حسن — التجويد 48 ممتاز" loading="lazy"><div class="cert-info"><span class="cert-name">عفاف حسن</span><span class="cert-score">48/48 · ممتاز</span></div></div>
+        <div class="cert-card"><img src="cert8.jpg" alt="رفيدة عمر — جزء عم 79%" loading="lazy"><div class="cert-info"><span class="cert-name">رفيدة عمر</span><span class="cert-score">79% · جيد</span></div></div>
+        <div class="cert-card"><img src="cert9.jpg" alt="أمامة محمد — القرآن 98% ممتاز" loading="lazy"><div class="cert-info"><span class="cert-name">أمامة محمد</span><span class="cert-score">98% · ممتاز</span></div></div>
+        <div class="cert-card"><img src="cert10.jpg" alt="فطيمة نحال — التجويد 42" loading="lazy"><div class="cert-info"><span class="cert-name">فطيمة نحال</span><span class="cert-score">42/48 · حسن جدا</span></div></div>
+        <div class="cert-card"><img src="cert11.jpg" alt="فاطمة عبد الرحمان — إعداد معلمات 78%" loading="lazy"><div class="cert-info"><span class="cert-name">فاطمة عبد الرحمان</span><span class="cert-score">78% · جيد</span></div></div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:24px;">
+      <button onclick="scrollCerts(-1)" class="cert-nav-btn">&#8249;</button>
+      <button onclick="scrollCerts(1)" class="cert-nav-btn">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">أسئلة شائعة</span><span class="fr">FAQ</span><span class="en">FAQ</span></div>
+    <h2 class="sec-title"><span class="ar">أسئلة <span class="grad">يسألنها كثيراً</span></span><span class="fr">Questions <span class="grad">fréquentes</span></span><span class="en">Frequently <span class="grad">asked questions</span></span></h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="ar">🎁 هل الحصة الأولى مجانية حقاً؟</span>
+          <span class="fr">🎁 La première séance est-elle vraiment gratuite ?</span>
+          <span class="en">🎁 Is the first session really free?</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-a">
+          <span class="ar">نعم، الحصة الأولى مجانية تماماً بدون أي التزام. هي فرصة لتتعرفي على الأكاديمية وتحديد مستواكِ قبل الاشتراك.</span>
+          <span class="fr">Oui, la première séance est 100% gratuite sans aucun engagement. C'est l'occasion de découvrir l'académie et évaluer votre niveau.</span>
+          <span class="en">Yes, the first session is 100% free with no commitment. It's your chance to discover the academy and assess your level.</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="ar">📖 هل يمكنني الانضمام إذا لم أكن أحسن قراءة القرآن؟</span>
+          <span class="fr">📖 Puis-je rejoindre si je ne sais pas lire le Coran ?</span>
+          <span class="en">📖 Can I join even if I can't read the Quran?</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-a">
+          <span class="ar">بالتأكيد! نرحب بجميع المستويات — المبتدئة من الصفر بطريقة النورانية، والقارئة، وحتى الحافظة التي تسعى إلى الإتقان.</span>
+          <span class="fr">Absolument ! Nous accueillons tous les niveaux — débutantes complètes avec la méthode Nourania, lectrices, et même les Hafidhas.</span>
+          <span class="en">Absolutely! We welcome all levels — complete beginners with the Nourania method, readers, and even Hafidhats seeking perfection.</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="ar">🌙 لماذا الساعة الثالثة صباحاً؟ أليس هذا وقتاً صعباً؟</span>
+          <span class="fr">🌙 Pourquoi 3h du matin ? C'est difficile !</span>
+          <span class="en">🌙 Why 3 AM? That's so early!</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-a">
+          <span class="ar">وقت الفجر هو أبرك الأوقات لحفظ القرآن الكريم — فالذهن صافٍ والبيت هادئ. وقد أكدت كثيرٌ من طالباتنا أن هذا الوقت غيّر حياتهن كليّاً. والصعوبة لا تكون إلا في البداية! 🌸</span>
+          <span class="fr">L'heure du Fajr est la plus bénie pour mémoriser — l'esprit est clair et la maison est calme. Beaucoup de nos étudiantes disent que ça a changé leur vie. La difficulté n'est qu'au début ! 🌸</span>
+          <span class="en">Fajr time is the most blessed for memorization — the mind is clear and the house is quiet. Many of our students say it changed their lives completely. The difficulty is only at the start! 🌸</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="ar">🌍 من أيّ بلد يمكنني الانضمام؟</span>
+          <span class="fr">🌍 De quel pays puis-je rejoindre ?</span>
+          <span class="en">🌍 From which country can I join?</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-a">
+          <span class="ar">الأكاديمية إلكترونية بالكامل — يمكننا قبولك من أي بلد في العالم، ما دام التوقيت يتناسب معكِ.</span>
+          <span class="fr">L'académie est 100% en ligne — nous pouvons vous accueillir depuis n'importe quel pays, tant que l'horaire vous convient.</span>
+          <span class="en">The academy is 100% online — we can accept you from any country in the world, as long as the timing works for you.</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="ar">💳 كيف تتم عملية الدفع؟</span>
+          <span class="fr">💳 Comment se fait le paiement ?</span>
+          <span class="en">💳 How does payment work?</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-a">
+          <span class="ar">يتم الدفع عبر PayPal بشكل آمن وسريع. بعد إتمام الدفع، أرسلي إيصال الدفع لتأكيد تسجيلك. الاشتراك 35€ شهرياً أو 300€ سنوياً (وفّري 120€).</span>
+          <span class="fr">Le paiement se fait via PayPal — sécurisé et rapide. Après le paiement, envoyez le reçu pour confirmer votre inscription. Formule 35€/mois ou 300€/an (économisez 120€).</span>
+          <span class="en">Payment via PayPal — secure and fast. After paying, send the receipt to confirm your registration. Plan is 35€/month or 300€/year (save 120€).</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="ar">👩‍👧 من أيّ سنٍّ يمكن الانضمام؟</span>
+          <span class="fr">👩‍👧 À partir de quel âge peut-on rejoindre ?</span>
+          <span class="en">👩‍👧 From what age can I join?</span>
+          <span class="faq-icon">＋</span>
+        </button>
+        <div class="faq-a">
+          <span class="ar">الأكاديمية مخصّصة حصراً للنساء والفتيات من سن الخامسة عشرة فما فوق، في بيئة نسائية آمنة ومحترمة.</span>
+          <span class="fr">L'académie est exclusivement pour les femmes et filles dès 15 ans. Un environnement féminin sûr et respectueux.</span>
+          <span class="en">The academy is exclusively for women and girls from 15 years old. A safe and respectful female environment.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background:var(--bg2);">
+  <div class="container">
+    <div class="sec-eyebrow">✦ <span class="ar">تواصلي معنا</span><span class="fr">CONTACTEZ-NOUS</span><span class="en">CONTACT US</span></div>
+    <h2 class="sec-title"><span class="ar">نحن هنا <span class="grad">لمساعدتك</span></span><span class="fr">Nous sommes là pour <span class="grad">vous aider</span></span><span class="en">We are here to <span class="grad">help you</span></span></h2>
+    <p class="sec-sub" style="margin-bottom:48px;"><span class="ar">تواصلي معنا لأي سؤال أو استفسار — سنردّ عليكِ في أقرب وقت</span><span class="fr">Contactez-nous pour toute question — nous vous répondrons dès que possible</span><span class="en">Contact us for any question — we will reply as soon as possible</span></p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:700px;margin:0 auto;">
+      <a href="https://t.me/+VhKg7MeUQW45YzJk" target="_blank" style="background:linear-gradient(135deg,#229ED9,#1e7db8);border-radius:var(--r);padding:36px 28px;text-align:center;text-decoration:none;display:block;transition:transform .2s;box-shadow:0 8px 32px rgba(34,158,217,0.25);" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="font-size:48px;margin-bottom:16px;">✈️</div>
+        <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:8px;">Telegram</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.7);"><span class="ar">انضمي للقناة الرئيسية</span><span class="fr">Rejoindre le canal principal</span><span class="en">Join the main channel</span></div>
+      </a>
+      <a href="mailto:safatitouh4@gmail.com" style="background:linear-gradient(135deg,#ea4335,#c5221f);border-radius:var(--r);padding:36px 28px;text-align:center;text-decoration:none;display:block;transition:transform .2s;box-shadow:0 8px 32px rgba(234,67,53,0.25);" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="font-size:48px;margin-bottom:16px;">📧</div>
+        <div style="font-size:18px;font-weight:800;color:#fff;margin-bottom:8px;">Email</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.7);">safatitouh4@gmail.com</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">ASAFA ACADEMY</div>
+  <div class="footer-tag"><span class="ar">حلقة تحفيظ القرآن الكريم</span><span class="fr">Cercle de Mémorisation du Coran</span><span class="en">Quran Memorization Circle</span></div>
+  <div class="footer-links">
+    <a href="https://www.facebook.com/share/1Bzddv92cE/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/saf.arb" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@rabaouisafa" target="_blank">TikTok</a>
+    <a href="https://pin.it/3xB6GtHiE" target="_blank">Pinterest</a>
+    <a href="https://youtube.com/@simplybysafa" target="_blank">YouTube</a>
+    <a href="#why"><span class="ar">لماذا نحن</span><span class="fr">Pourquoi nous</span><span class="en">Why us</span></a>
+    <a href="#schedule"><span class="ar">البرنامج</span><span class="fr">Programme</span><span class="en">Schedule</span></a>
+    <a href="#register"><span class="ar">التسجيل</span><span class="fr">Inscription</span><span class="en">Register</span></a>
+  </div>
+  <div class="footer-verse">﴿ إِنَّ هَذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ ﴾</div>
+  <div class="footer-copy">© 2025 ASAFA ACADEMY — assafaacademy.netlify.app</div>
+</footer>
+
+<!-- Floating Buttons -->
+<div class="float-btns">
+  <a href="https://t.me/+VhKg7MeUQW45YzJk" target="_blank" class="float-btn float-tg" title="Telegram">✈️</a>
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="float-btn float-top" title="أعلى الصفحة">↑</button>
+</div>
+
+<script>
+function toggleFaq(btn){
+  btn.classList.toggle('open');
+  const ans=btn.nextElementSibling;
+  ans.classList.toggle('open');
+}
+function scrollCerts(dir){
+  const t=document.getElementById('certsTrack');
+  t.scrollBy({left:dir*300,behavior:'smooth'});
+}
+function setLang(lang) {
+  const html = document.getElementById('html-root');
+  html.setAttribute('data-lang', lang);
+  html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  html.setAttribute('lang', lang);
+  ['btn-ar','btn-fr','btn-en'].forEach(id => { const el = document.getElementById(id); if(el) el.classList.remove('active'); });
+  const btn = document.getElementById('btn-' + lang);
+  if(btn) btn.classList.add('active');
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => { e.preventDefault(); document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'}); });
+});
+</script>
+</body>
+</html>
